@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejerciciosdel1al6</title>
+    <link rel="stylesheet" type="text/css" href="Ejerciciosdel1al6.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Righteous&family=Space+Mono&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="Ejerciciosdel1al6.js"></script>
+  </head>
+  <body>
+    <div class="menu-bloque">
+      <div class="ejercicio1">
+        <p>EJERCICIO 1 Solicita al usuario tres números enteros e indícale cuál es el menor.</p>
+        <input type="button" value="Introducir" onclick="tresnumeros();"> 3 numeros  mostrar el menor</button>
+      </div>
+
+      <div class="ejercicio2>">
+        <p>EJERCICIO 2 Solicita al usuario una frase y una letra y muestra la cantidad de veces que aparece la letra en la frase.
+        </p>
+        <input type="button" value="Introducir" onclick="contar();"> Solicitar al usuario frase y letra</button>  
+      </div>
+       
+        <div class="ejercicio3">
+        <p>EJERCICIO 3: Suma o resta (según elija el usuario) dos números reales
+        </p>
+        <input type="button" value="Introducir nº real para suma" onclick="sumar();"></button>  
+        <input type="button" value="Introducir nº real para resta" onclick="restar();"></button>  
+      </div> 
+
+      <div class="ejercicio4">
+        <p> EJERCICIO 4:  Almacena en dos variables datos de validación (usuario y contraseña) correctos y permite que el usuario valide (dispone de 3 intentos)
+          En caso de error en el usuario o en el password devolver mensaje de error: "Datos incorrectos".
+          En caso de que gastar todos los intentos dar un mensaje de  : "En 15 minutos podrás volver a loguearte".<br><b>IIFE: Expresión de función ejecutada inmediatamente. Esta es la razón por la que carga este ejercicio el primero a pesar de ser el numero 4.</b>
+        </p>
+      </div>
+
+      <div class="ejercicio5">
+        <p>EJERCICIO 5 Solicita al usuario una letra, si inserta una a muestra el número 7, si es una b, el 9, si es una c el 101 y si no es ninguno de los tres, indícale que se ha equivocado de letra</p>
+        <input type="button" value="Introducir una letra" onclick="unaletra();"><b> Versión if else</b></button><br>
+        <input type="button" value="Introducir una letra" onclick="casos();"><b> Versión Swtich</b></button> 
+      </div>
+      
+      <div class="ejercicio6">
+        <p> EJERCICIO 6: Ordena alfabéticamente un array con 7 palabras, puedes usar el algoritmo de la burbuja</p>
+        <input type="button" value="Ordenazión Alfabetica" onclick="sort();"><b> Versión Sort</b></button><br>
+        <input type="button" value="Ordenación Alfabetica" onclick="burbuja();"><b> Versión burbuja</b></button> 
+      </div>
+    </div>
+  </body>
+</html>
