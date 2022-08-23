@@ -6,16 +6,22 @@
 let contar = ()=>{
 
 
+  var frase=document.getElementById('fraseid').value;  
+  var letra=document.getElementById('letraid').value;  
+  let contador=0;
 
-var frase = prompt('Introduce una frase: '); //hola
-var letra = prompt('Introduce una letra: '); //a
-var array = [];
+
+/* var frase = prompt('Introduce una frase: '); //hola
+var letra = prompt('Introduce una letra: '); //a */
 
 for (let i = 0; i < frase.length; i++) {
   if (frase[i] == letra) {
-    array.push(frase[i]);
+    contador++
   }
 }
+let texto=document.createTextNode('Tu frase tiene ' + contador+ ' letras ' + letra);
+let parrafo=document.createElement('p')
+parrafo.appendChild(texto);
+document.body.appendChild(parrafo);
 
-alert('hay '+(array.length)+' '+ letra + ' en tu frase');
 }
